@@ -2,6 +2,7 @@ import React from 'react';
 import { Select as MuiSelect, MenuItem, FormControl, InputLabel } from '@material-ui/core';
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+//import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
 	formControl: {
@@ -13,7 +14,7 @@ const useStyles = makeStyles(theme => ({
 const theme = createMuiTheme({
 	typography: {
 		fontFamily: 'PFEncoreSansPro-Light',
-		fontSize: '16px',
+		fontSize: 16,
 	},
 });
 
@@ -36,6 +37,7 @@ const Select = () => {
 			<FormControl className={classes.formControl}>
 				<InputLabel htmlFor="age-simple">Age</InputLabel>
 				<MuiSelect
+					className={classes.icon}
 					value={values.age}
 					onChange={handleChange}
 					inputProps={{
@@ -51,5 +53,9 @@ const Select = () => {
 		</ThemeProvider>
 	);
 };
+
+Select.propTypes = {};
+
+Select.defaultProps = {};
 
 export default Select;
