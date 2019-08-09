@@ -37,9 +37,9 @@ const Select = () => {
 			<FormControl className={classes.formControl}>
 				<InputLabel htmlFor="age-simple">Age</InputLabel>
 				<MuiSelect
-					className={classes.icon}
 					value={values.age}
 					onChange={handleChange}
+					required
 					inputProps={{
 						name: 'age',
 						id: 'age-simple',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Input as MuiInput, FormControl, InputLabel } from '@material-ui/core';
+import { TextField } from '@material-ui/core';
 import { createMuiTheme, makeStyles } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 //import PropTypes from 'prop-types';
@@ -16,6 +16,16 @@ const theme = createMuiTheme({
 		fontFamily: 'PFEncoreSansPro-Light',
 		fontSize: 16,
 	},
+	overrides: {
+		MuiFormLabel: {
+			asterisk: {
+				color: '#db3131',
+				'&$error': {
+					color: '#db3131',
+				},
+			},
+		},
+	},
 });
 
 const Input = () => {
@@ -28,18 +38,13 @@ const Input = () => {
 
 	return (
 		<ThemeProvider theme={theme}>
-			<FormControl className={classes.formControl}>
-				<InputLabel htmlFor="age-simple">Age</InputLabel>
-				<MuiInput
-					className={classes.icon}
-					value={value}
-					onChange={handleChange}
-					inputProps={{
-						name: 'age',
-						id: 'age-simple',
-					}}
-				/>
-			</FormControl>
+			<TextField
+				required
+				className={classes.formControl}
+				value={value}
+				onChange={handleChange}
+				label="Age"
+			/>
 		</ThemeProvider>
 	);
 };
