@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Select, Input, Checkbox } from '../../_common';
+import { Select, Input, Checkbox, Button } from '../../_common';
 
 const MainPage = () => {
 	return (
@@ -9,6 +9,7 @@ const MainPage = () => {
 			<Select />
 			<Input />
 			<Checkbox />
+			<Button color="default">TRY</Button>
 		</div>
 	);
 };
