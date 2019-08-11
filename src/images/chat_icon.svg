@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="24px" viewBox="0 0 29 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_feedback</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chat">
+            <g id="ic_feedback">
+                <path d="M10.5873016,15.1904762 L5.52380952,19.3333333 L5.52380952,15.1904762 L2.00499418,15.1904762 C0.897666473,15.1904762 0,14.2857341 0,13.1889662 L0,2.00151003 C0,0.896106566 0.890066964,0 2.00499418,0 L18.7092915,0 C19.8166192,0 20.7142857,0.904742059 20.7142857,2.00151003 L20.7142857,13.1889662 C20.7142857,14.2943696 19.8242188,15.1904762 18.7092915,15.1904762 L10.5873016,15.1904762 Z" id="Combined-Shape" fill="#555E6F"></path>
+                <path d="M24.1666667,5.52380952 L25.5395285,5.52380952 C27.0707265,5.52380952 28.3095238,6.76011836 28.3095238,8.2851826 L28.3095238,16.5719603 C28.3095238,18.1078302 27.0693547,19.3333333 25.5395285,19.3333333 L22.7857143,19.3333333 L22.7857143,23.4761905 L17.7222222,19.3333333 L11.047619,19.3333333" id="Combined-Shape" stroke="#555E6F" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-2" transform="translate(5.523810, 6.904762)" fill="#FFFFFF" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                    <circle id="Oval" cx="0.69047619" cy="0.69047619" r="1"></circle>
+                    <circle id="Oval-Copy" cx="4.83333333" cy="0.69047619" r="1"></circle>
+                    <circle id="Oval-Copy-2" cx="8.97619048" cy="0.69047619" r="1"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

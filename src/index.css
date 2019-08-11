@@ -41,14 +41,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: PFEncoreSansPro-Light, 'Segoe UI Light';
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  font-size: 14px;
   background-color: #F6F7F9;
-  min-width: 1440px;
   user-select: none;  
 }
 

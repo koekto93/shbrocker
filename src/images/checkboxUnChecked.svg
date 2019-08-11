@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="59" height="16" viewBox="0 0 59 16">
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" stroke="#AAA" d="M.5.5h15v15H.5z"/>
+        <text fill="#1B1E2D" font-family="PFEncoreSansPro-Book, PF Encore Sans Pro" font-size="14" font-weight="300" letter-spacing=".18" transform="translate(0 -3)">
+            <tspan x="25" y="11">Text</tspan>
+        </text>
+    </g>
+</svg>

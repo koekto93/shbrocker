@@ -8,9 +8,8 @@ const styledBy = (property, mapping) => props => mapping[props[property]];
 const Button = withStyles({
 	root: {
 		borderRadius: 3,
-
-		color: 'white',
-		//height: 48,
+		width: '100%',
+		height: 35,
 		//padding: '0 30px',
 		boxShadow: 'none',
 		fontFamily: 'PFEncoreSansPro-Light',
@@ -18,13 +17,28 @@ const Button = withStyles({
 
 		background: styledBy('color', {
 			default: '#8E97A8',
-			light: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+			light: 'white',
 		}),
-		border: 0,
+		color: styledBy('color', {
+			default: 'white',
+			light: '#7C7C7C',
+		}),
+		border: styledBy('color', {
+			default: 0,
+			light: '1px solid #AAAAAA',
+		}),
 		'&:hover': {
 			background: styledBy('color', {
 				default: '#727987',
-				light: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+				light: '#727987',
+			}),
+			color: styledBy('color', {
+				default: 'white',
+				light: 'white',
+			}),
+			border: styledBy('color', {
+				default: 0,
+				light: 0,
 			}),
 		},
 	},
