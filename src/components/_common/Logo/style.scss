@@ -1,0 +1,15 @@
+.c-logo {
+    &__image {
+        width: 130px;
+        height: 13px;
+        margin-bottom: 28px;
+    }
+    &__caption {
+        color: #1B1E2D;
+        font-family: 'PFEncoreSansPro-Light';
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: 0.47px;
+        line-height: 20px;
+    }
+}

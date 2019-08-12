@@ -38,11 +38,16 @@
   box-sizing: border-box; 
 }
 
+html, body, #root {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: #F6F7F9;
   user-select: none;  
+
 }
 
 p { 

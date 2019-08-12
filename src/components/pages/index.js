@@ -7,11 +7,12 @@ import { withRouter } from 'react-router-dom';
 import MainPage from './MainPage';
 import SecondPage from './SecondPage';
 import Login from './Login';
+import './style.scss';
 
 class Pages extends Component {
 	render() {
 		return (
-			<Grid container>
+			<Grid container className="l-pages">
 				<Switch>
 					<Redirect from="/" exact to="/login" />
 					<Route path="/mainPage" component={MainPage} />

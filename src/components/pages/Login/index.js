@@ -1,13 +1,19 @@
 import React from 'react';
 import { Grid } from '@material-ui/core';
 
+import { Logo } from '../../_common';
+import './style.scss';
+
 const Login = () => {
 	return (
-		<Grid container>
-			<Grid item xs={4}>
+		<Grid container className="l-login">
+			<Grid item xs={4} xl={3} spacing={4}>
+				<Logo />
 				<div className="right">ff</div>
 			</Grid>
-			<Grid item xs={8}></Grid>
+			<Grid item xs={8} xl={9}>
+				<div className="l-login__block-with-image"></div>
+			</Grid>
 		</Grid>
 	);
 };
