@@ -1,0 +1,15 @@
+.c-dialog-header {
+    &__icon-wrapper {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

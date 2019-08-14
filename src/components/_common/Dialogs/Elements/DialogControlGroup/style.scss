@@ -1,0 +1,8 @@
+.c-dialog-control-group {
+    display: flex;
+    justify-content: flex-end;
+
+    & > button:first-child {
+        margin-right: 16px;
+    }
+}
