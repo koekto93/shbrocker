@@ -1,26 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Input from '@lmui/components/Input';
-
-/* function getCheckIcon(hasError) {
-	return hasError
-		? null
-		: [
-				{
-					static: { name: 'check', color: 'primary' },
-				},
-		  ];
-} */
+import { Input } from '../../../index';
 
 const FormInput = ({ input, meta, screenSize, ...rest }) => {
 	return (
 		<div>
 			<Input
-				transitionPlaceholder
 				errorText={meta.touched && meta.error}
-				size={screenSize}
-				//insideIconsRight={getCheckIcon(meta.error)}
-				maskChar={null}
+				//size={screenSize}
 				{...input}
 				{...rest}
 			/>

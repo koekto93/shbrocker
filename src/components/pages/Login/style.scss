@@ -1,4 +1,8 @@
 .l-login {
+    &__content {
+        padding: 35px 30px;
+    }
+
     &__block-with-image {
         background: url('../../../images/login_page.jpg') no-repeat;
         height: 100%;
