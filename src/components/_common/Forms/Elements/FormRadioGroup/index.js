@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Field } from 'react-final-form';
-import RadioGroup from '@lmui/components/RadioGroup';
+//import RadioGroup from '@lmui/components/RadioGroup';
 
 import { FormRadioField } from '../index';
 
@@ -12,7 +12,7 @@ function getOptions(options, disabled) {
 }
 
 const FormRadioGroup = ({ options, disabled }) => {
-	return <RadioGroup elements={getOptions(options, disabled)} />;
+	/* return <RadioGroup elements={getOptions(options, disabled)} />; */
 };
 
 FormRadioGroup.propTypes = {

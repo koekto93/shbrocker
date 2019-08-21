@@ -1,28 +1,34 @@
 import React from 'react';
-import View from '@lmui/components/View';
-import Text from '@lmui/components/Text';
+import { Grid } from '@material-ui/core';
 import { Field } from 'react-final-form';
 
-export const renderContent = (content, mapFieldComponents, globalFormOptions) => {
+export const renderContent = (content, mapFieldComponents) => {
 	return content.map(({ colProps, component, ...restContent }, i) => (
-		<View key={i} {...colProps}>
-			{component === 'text' ? (
-				<Text {...restContent}>{restContent.text}</Text>
-			) : (
-				<Field
-					component={mapFieldComponents[component]}
-					{...restContent}
-					{...globalFormOptions}
-				/>
-			)}
-		</View>
+		<Grid key={i} item {...colProps}>
+			<Field component={mapFieldComponents[component]} {...restContent} />
+		</Grid>
 	));
 };
 
-export const renderFields = (formFields, mapFieldComponents, globalFormOptions) => {
-	return formFields.map((item, i) => (
-		<View key={i} row {...item.rowProps}>
-			{renderContent(item.content, mapFieldComponents, globalFormOptions)}
-		</View>
+export const renderFields = (formFields, mapFieldComponents) => {
+	return formFields.map(({ gridItemProps, content }, i) => (
+		<Grid key={i} container>
+			<Grid item {...gridItemProps}>
+				{renderContent(content, mapFieldComponents)}
+			</Grid>
+		</Grid>
 	));
 };
+
+/*  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js?(x)": [
+      "node_modules/.bin/eslint --max-warnings=0",
+      "prettier --write",
+      "git add"
+    ]
+  } */

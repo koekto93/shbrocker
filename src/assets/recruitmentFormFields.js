@@ -1,25 +1,28 @@
 import {
 	required,
-	contractNumber,
+	composeValidators,
+	/* contractNumber,
 	tin,
 	contractorName,
 	contactPersonName,
 	contractorPhone,
 	contractorEmail,
 	//commissionPart,
-	composeValidators,
-} from '../../util/recruitmentValidationsHelper';
+	 */
+} from '../helpers/recruitmentValidationsHelper';
 
-import { FormInput, FormCheckboxGroup, FormRadioGroup } from '../../components/Forms/Elements';
+import {
+	FormInput /* FormCheckboxGroup, FormRadioGroup  */,
+} from '../components/_common/Forms/Elements';
 
 export const mapFieldComponents = {
 	input: FormInput,
-	checkboxGroup: FormCheckboxGroup,
-	radioGroup: FormRadioGroup,
+	//checkboxGroup: FormCheckboxGroup,
+	//radioGroup: FormRadioGroup,
 };
 
 // Пришлось разделить данные для чекбоксов
-const firstAboutContractorOptions = [
+/* const firstAboutContractorOptions = [
 	{
 		name: 'aboutContractorControl',
 		value: 'isUsingGeneralTaxationSystem',
@@ -121,24 +124,36 @@ const companyStatusOptions = [
 			component: 'input',
 		},
 	},
-];
+]; */
+
+//---------
 
 export const loginFormFields = [
 	{
-		rowProps: { mb: 'gap5' },
+		gridItemProps: { xs: 12 },
 		content: [
 			{
-				colProps: { 'col-xl-6': 'col-xl-6' },
-				name: 'contractNumber',
-				placeholder: '№ договора',
-				disabled: true,
+				colProps: { xs: 12 },
+				name: 'login',
+				required: true,
+				label: 'Логин',
+				component: 'input',
+				validate: composeValidators(required),
+			},
+			{
+				colProps: { xs: 12 },
+				name: 'password',
+				required: false,
+				label: 'Пароль',
 				component: 'input',
 			},
 		],
 	},
 ];
 
-export const companyFormFields = [
+//----------
+
+/* export const companyFormFields = [
 	{
 		rowProps: { mb: 'gap5' },
 		content: [
@@ -363,3 +378,4 @@ export const companyFormFields = [
 		],
 	},
 ];
+ */

@@ -5,7 +5,7 @@ import { omit } from 'lodash';
 import { Field } from 'react-final-form';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import { mapFieldComponents } from '../../../../constants/recruitment/recruitmentFormFields';
+import { mapFieldComponents } from '../../../../../assets/recruitmentFormFields';
 import Checkbox from '../../../Checkbox';
 import './style.scss';
 

@@ -4,10 +4,10 @@ import { omit } from 'lodash';
 import { Field } from 'react-final-form';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 //import { block } from 'bem-cn';
-import View from '@lmui/components/View';
+//import View from '@lmui/components/View';
 
-import Radio from '../../../Radio';
-import { mapFieldComponents } from '../../../../constants/recruitment/recruitmentFormFields';
+import { RadioButton } from '../../../index';
+import { mapFieldComponents } from '../../../../../assets/recruitmentFormFields';
 import './style.scss';
 
 //const cn = block('form-radio-field');
@@ -26,7 +26,7 @@ const FormRadioField = ({
 	return (
 		<View row>
 			<View col-xl-12>
-				<Radio
+				<RadioButton
 					{...other}
 					name={name}
 					value={value}
