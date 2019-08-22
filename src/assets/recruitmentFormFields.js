@@ -21,6 +21,36 @@ export const mapFieldComponents = {
 	//radioGroup: FormRadioGroup,
 };
 
+//---------
+
+export const loginFormFields = {
+	formFields: [
+		{
+			gridItemProps: { xs: 12 },
+			content: [
+				{
+					colProps: { xs: 12 },
+					name: 'login',
+					required: true,
+					label: 'Логин',
+					component: 'input',
+					validate: composeValidators(required),
+				},
+				{
+					colProps: { xs: 12 },
+					name: 'password',
+					required: true,
+					label: 'Пароль',
+					component: 'input',
+					validate: composeValidators(required),
+				},
+			],
+		},
+	],
+};
+
+//----------
+
 // Пришлось разделить данные для чекбоксов
 /* const firstAboutContractorOptions = [
 	{
@@ -125,33 +155,6 @@ const companyStatusOptions = [
 		},
 	},
 ]; */
-
-//---------
-
-export const loginFormFields = [
-	{
-		gridItemProps: { xs: 12 },
-		content: [
-			{
-				colProps: { xs: 12 },
-				name: 'login',
-				required: true,
-				label: 'Логин',
-				component: 'input',
-				validate: composeValidators(required),
-			},
-			{
-				colProps: { xs: 12 },
-				name: 'password',
-				required: false,
-				label: 'Пароль',
-				component: 'input',
-			},
-		],
-	},
-];
-
-//----------
 
 /* export const companyFormFields = [
 	{

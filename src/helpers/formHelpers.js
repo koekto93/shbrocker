@@ -2,7 +2,9 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import { Field } from 'react-final-form';
 
-export const renderContent = (content, mapFieldComponents) => {
+import { mapFieldComponents } from '../assets/recruitmentFormFields';
+
+export const renderContent = content => {
 	return content.map(({ colProps, component, ...restContent }, i) => (
 		<Grid key={i} item {...colProps}>
 			<Field component={mapFieldComponents[component]} {...restContent} />
@@ -10,11 +12,11 @@ export const renderContent = (content, mapFieldComponents) => {
 	));
 };
 
-export const renderFields = (formFields, mapFieldComponents) => {
+export const renderFields = formFields => {
 	return formFields.map(({ gridItemProps, content }, i) => (
 		<Grid key={i} container>
 			<Grid item {...gridItemProps}>
-				{renderContent(content, mapFieldComponents)}
+				<Grid container>{renderContent(content)}</Grid>
 			</Grid>
 		</Grid>
 	));

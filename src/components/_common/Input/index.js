@@ -33,7 +33,7 @@ const theme = createMuiTheme({
 });
 //error выставляет цвет для сообщения об ошибке.
 
-const Input = ({ label, value, name, required, onChange, errorText }) => {
+const Input = ({ label, value, name, required, onChange, errorText, ...rest }) => {
 	const classes = useStyles();
 	return (
 		<ThemeProvider theme={theme}>
@@ -45,6 +45,7 @@ const Input = ({ label, value, name, required, onChange, errorText }) => {
 					label={label}
 					name={name}
 					aria-describedby="component-error-text"
+					{...rest}
 				/>
 				{errorText && <FormHelperText>{errorText}</FormHelperText>}
 			</FormControl>

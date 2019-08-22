@@ -4,7 +4,6 @@ import { Form } from 'react-final-form';
 import { Grid } from '@material-ui/core';
 
 import { Text } from '../../index';
-import { loginFormFields, mapFieldComponents } from '../../../../assets/recruitmentFormFields';
 import { renderFields } from '../../../../helpers/formHelpers';
 
 function onSubmit(values) {
@@ -12,7 +11,7 @@ function onSubmit(values) {
 }
 
 //TODO Сделать адекватные названия полей
-const Simple = () => {
+const Simple = ({ formFields }) => {
 	//console.log(loginFormFields);
 	return (
 		<Form
@@ -24,9 +23,7 @@ const Simple = () => {
 						{/* <Text block color="mainText" size="fs2" weight="bold" mb={'gap5'}>
 							Данные компании
 						</Text> */}
-						<form onSubmit={handleSubmit}>
-							{renderFields(loginFormFields, mapFieldComponents)}
-						</form>
+						<form onSubmit={handleSubmit}>{renderFields(formFields)}</form>
 					</Grid>
 				</Grid>
 			)}
@@ -36,6 +33,9 @@ const Simple = () => {
 
 Simple.propTypes = {
 	screenSize: PropTypes.string,
+	formFields: PropTypes.arrayOf(
+		PropTypes.shape({ gridItemProps: PropTypes.object, content: PropTypes.array })
+	),
 };
 
 export default Simple;
