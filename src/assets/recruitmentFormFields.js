@@ -24,6 +24,7 @@ export const mapFieldComponents = {
 //---------
 
 export const loginFormFields = {
+	captionText: null,
 	formFields: [
 		{
 			gridItemProps: { xs: 12 },
@@ -39,8 +40,38 @@ export const loginFormFields = {
 				{
 					colProps: { xs: 12 },
 					name: 'password',
+					type: 'password',
 					required: true,
 					label: 'Пароль',
+					component: 'input',
+					validate: composeValidators(required),
+				},
+			],
+		},
+	],
+};
+
+export const passwordRecoveryFormFields = {
+	captionText: 'Восстановление пароля',
+	formFields: [
+		{
+			gridItemProps: { xs: 12 },
+			content: [
+				{
+					colProps: { xs: 12 },
+					name: 'newPassword',
+					type: 'password',
+					required: true,
+					label: 'Введите новый пароль',
+					component: 'input',
+					validate: composeValidators(required),
+				},
+				{
+					colProps: { xs: 12 },
+					name: 'confirmPassword',
+					type: 'password',
+					required: true,
+					label: 'Повторите новый пароль',
 					component: 'input',
 					validate: composeValidators(required),
 				},

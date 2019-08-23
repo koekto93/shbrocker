@@ -3,7 +3,7 @@ import { Route, /* Redirect, */ Switch } from 'react-router-dom';
 import { Grid } from '@material-ui/core';
 
 import { Logo } from '../../_common';
-import { Usual, Recovery, Registration } from './LoginState';
+import { Usual, PasswordRecovery, AccessRecovery, Registration } from './LoginState';
 import './style.scss';
 
 const Login = () => {
@@ -22,17 +22,18 @@ const Login = () => {
 		<Grid container className="l-login">
 			<Grid item xs={4} xl={3}>
 				<div className="l-login__content">
-					{/* <Logo /> */}
+					<Logo />
 					<Switch>
 						<Route path="/login" component={Usual} />
-						<Route path="/recovery" component={Recovery} />
+						<Route path="/passwordRecovery" component={PasswordRecovery} />
+						<Route path="/accessRecovery" component={AccessRecovery} />
 						<Route path="/registration" component={Registration} />
 					</Switch>
 				</div>
 			</Grid>
-			{/* <Grid item xs={8} xl={9}>
+			<Grid item xs={8} xl={9}>
 				<div className="l-login__block-with-image" />
-			</Grid> */}
+			</Grid>
 		</Grid>
 	);
 };

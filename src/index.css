@@ -47,7 +47,10 @@ body {
   padding: 0;
   background-color: #F6F7F9;
   user-select: none;  
+}
 
+a {
+  text-decoration: none;
 }
 
 p { 
