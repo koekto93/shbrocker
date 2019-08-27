@@ -24,10 +24,10 @@ const Login = () => {
 				<div className="l-login__content">
 					<Logo />
 					<Switch>
-						<Route path="/login" component={Usual} />
-						<Route path="/passwordRecovery" component={PasswordRecovery} />
-						<Route path="/accessRecovery" component={AccessRecovery} />
-						<Route path="/registration" component={Registration} />
+						<Route exact path="/login" component={Usual} />
+						<Route path="/login/passwordRecovery" component={PasswordRecovery} />
+						<Route path="/login/accessRecovery" component={AccessRecovery} />
+						<Route path="/login/registration" component={Registration} />
 					</Switch>
 				</div>
 			</Grid>

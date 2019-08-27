@@ -14,7 +14,7 @@ class Pages extends Component {
 		return (
 			<Grid container className="l-pages">
 				<Switch>
-					<Redirect from="/" exact to="/login" />
+					<Redirect exact from="/" to="/login" />
 					<Route path="/mainPage" component={MainPage} />
 					<Route path="/secondPage" component={SecondPage} />
 					<Route path="/login" component={Login} />
