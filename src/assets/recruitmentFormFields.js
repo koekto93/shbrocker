@@ -80,6 +80,26 @@ export const passwordRecoveryFormFields = {
 	],
 };
 
+export const accessRecoveryFields = {
+	captionText: 'Восстановление доступа',
+	formFields: [
+		{
+			gridItemProps: { xs: 12 },
+			content: [
+				{
+					colProps: { xs: 12 },
+					name: 'email',
+					type: 'text',
+					required: true,
+					label: 'Укажите ваш email',
+					component: 'input',
+					validate: composeValidators(required),
+				},
+			],
+		},
+	],
+};
+
 //----------
 
 // Пришлось разделить данные для чекбоксов

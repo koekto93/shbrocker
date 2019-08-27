@@ -10,15 +10,18 @@ const Usual = () => {
 		<Grid container className="l-usual-login-part">
 			<Grid item xs={12} lg={4}>
 				<SimpleForm {...loginFormFields} />
+
 				<Link to="/recovery">
 					<Text text="Забыли пароль?" textPosition="end" size="fs0" />
 				</Link>
+
 				<Grid container alignItems="center" className="l-usual-login-part__control-group">
 					<Grid item xs={6}>
 						<Link to="/recovery">
 							<Text text="Зарегистрироваться" size="fs0" color="light" />
 						</Link>
 					</Grid>
+
 					<Grid item xs={6}>
 						<Button color="default">Вход</Button>
 					</Grid>

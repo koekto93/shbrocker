@@ -22,7 +22,7 @@ const Login = () => {
 		<Grid container className="l-login">
 			<Grid item xs={4} xl={3}>
 				<div className="l-login__content">
-					<Logo />
+					{/* <Logo /> */}
 					<Switch>
 						<Route exact path="/login" component={Usual} />
 						<Route path="/login/passwordRecovery" component={PasswordRecovery} />
@@ -32,7 +32,7 @@ const Login = () => {
 				</div>
 			</Grid>
 			<Grid item xs={8} xl={9}>
-				<div className="l-login__block-with-image" />
+				{/* <div className="l-login__block-with-image" /> */}
 			</Grid>
 		</Grid>
 	);

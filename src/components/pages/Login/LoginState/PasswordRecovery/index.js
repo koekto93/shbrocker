@@ -9,9 +9,11 @@ const PasswordRecovery = () => {
 		<Grid container className="l-password-recovery-login-part">
 			<Grid item xs={12} lg={4}>
 				<SimpleForm {...passwordRecoveryFormFields} />
+
 				<Grid
 					container
 					alignItems="center"
+					justify="flex-end"
 					className="l-password-recovery-login-part__control-group"
 				>
 					<Grid item xs={6}>
