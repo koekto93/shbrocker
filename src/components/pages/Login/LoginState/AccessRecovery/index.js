@@ -13,6 +13,8 @@ const AccessRecovery = () => {
 				<Grid
 					container
 					alignItems="center"
+					justify="space-between"
+					spacing={2}
 					className="l-access-recovery-login-part__control-group"
 				>
 					<Grid item xs={6}>
